@@ -16,8 +16,23 @@
 	keymap {
 		compatible = "zmk,keymap";
 
-		default_layer {
-			
-		}
+		qwerty {
+			status = reserved;
+		};
+		dersium {
+			status = reserved;
+		};
+		symbols {
+			status = reserved;
+		};
+		functions {
+			status = reserved;
+		};
+		numbers {
+			status = reserved;
+		};
+		settings {
+			status = reserved;
+		};
 	};
 };
