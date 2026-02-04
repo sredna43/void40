@@ -53,13 +53,28 @@
 			>;
 		};
 		symbols {
-			status = "reserved";
+			bindings = <
+				&kp ESC &kp GRAVE &kp AT &kp HASH &kp DOLLAR &kp PRCNT &kp CARET &kp LBRC &kp RBRC &kp STAR &kp QMARK &kp BSPC
+				&kp TAB &kp SLASH &kp EXCL &kp MINUS &kp EQUAL &kp LT &kp GT &kp LPAR &kp RPAR &kp DOT  &kp BSLH &kp ENTER
+				&kp LSHIFT &kp TILDE &kp PLUS &kp UNDER &kp SEMI &kp PIPE &kp AMPS &kp LBKT &kp RBKT &kp COMMA &kp SQT &kp RSHIFT
+				&kp LCTRL &kp LGUI &kp LALT &to 0 &to 0 &kp SPACE &to 0 &to 0 &kp RALT &to 0 &kp RCTRL
+			>;
 		};
 		functions {
-			status = "reserved";
+			bindings = <
+				&kp ESC &none &kp RIGHT &none &none &none &kp DOWN &none &none &none &none &kp BSPC
+				&kp TAB &none &none &none &none &none &none &kp LEFT &none &none &none &kp ENTER
+				&kp LSHIFT &none &none &none &none &none &kp UP &none &none &none &none &kp RSHIFT
+				&kp LCTRL &none &none &none &none &kp SPACE &none &none &none &none &none &kp RCTRL
+			>;
 		};
 		numbers {
-			status = "reserved";
+			bindings = <
+				&kp ESC &none &none &none &none &none &none &none &none &none &none &kp BSPC
+				&kp TAB &none &none &none &none &none &none &none &none &none &none &kp ENTER
+				&kp LSHIFT &none &none &none &none &none &none &none &none &none &none &kp RSHIFT
+				&kp LCTRL &none &none &none &none &none &none &none &none &none &none &kp RCTRL
+			>;
 		};
 		settings {
 			bindings = <
