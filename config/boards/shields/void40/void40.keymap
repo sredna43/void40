@@ -17,22 +17,22 @@
 		compatible = "zmk,keymap";
 
 		qwerty {
-			status = reserved;
+			status = "reserved";
 		};
 		dersium {
-			status = reserved;
+			status = "reserved";
 		};
 		symbols {
-			status = reserved;
+			status = "reserved";
 		};
 		functions {
-			status = reserved;
+			status = "reserved";
 		};
 		numbers {
-			status = reserved;
+			status = "reserved";
 		};
 		settings {
-			status = reserved;
+			status = "reserved";
 		};
 	};
 };
