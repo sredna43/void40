@@ -2,7 +2,7 @@
 #include "void40-layouts.dtsi"
 
 &void40_layout {
-	transform = <&default_transform>;
+	transform = <&transform>;
 };
 
 / {
