@@ -37,10 +37,10 @@
 		compatible = "zmk,keymap";
 		
 		test {
-			&bt BT_SEL 0 &kp B &kp L &none &none &none &none &none &none &none &none &none
+			bindings = <&bt BT_SEL 0 &kp B &kp L &none &none &none &none &none &none &none &none &none
 			&none &none &none &none &none &none &none &none &none &none &none &none 
 			&none &none &none &none &none &none &none &none &none &none &none &none
-			&none &none &none &none &none &none &none &none &none &none &none &kp Q
+			&none &none &none &none &none &none &none &none &none &none &none &kp Q>;
 		};
 
 	/* 	dersium { */
