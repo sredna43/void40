@@ -4,3 +4,5 @@ include:
     shield: void40
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano
+    shield: tester_pro_micro
