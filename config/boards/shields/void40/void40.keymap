@@ -91,5 +91,5 @@
 	/* 			&none &none &none &none &none &none &none &none &none &none &bootloader */
 	/* 		>; */
 	/* 	}; */
-	/* }; */
+	};
 };
