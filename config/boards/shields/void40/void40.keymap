@@ -17,6 +17,7 @@
 			key-positions = <36 46>;
 			bindings = <&tog 4>;
 		};
+	};
 
 	keymap {
 		compatible = "zmk,keymap";
