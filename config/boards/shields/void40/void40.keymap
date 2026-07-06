@@ -15,23 +15,8 @@
 		bt_layer_combo {
 			timeout-ms = <50>;
 			key-positions = <36 46>;
-			bindings = <&tog 5>;
+			bindings = <&tog 4>;
 		};
-
-		to_qwerty {
-			layers = <0>;
-			timeout-ms = <50>;
-			key-positions = <40 42>;
-			bindings = <&to 1>;
-		};
-
-		to_dersium {
-			layers = <1>;
-			timeout-ms = <50>;
-			key-positions = <40 42>;
-			bindings = <&to 0>;
-		};
-	};
 
 	keymap {
 		compatible = "zmk,keymap";
@@ -43,25 +28,17 @@
 		/* 	&none &none &none &none &none &none &none &none &none &none &kp Q>; */
 		/* }; */
 
-		dersium {
-			bindings = <
-				&kp ESC &kp B &kp L &kp D &kp C &kp V &kp J &kp Y &kp U &kp O &kp COMMA &kp BSPC
-				&kp TAB &kp N &kp R &kp T &kp S &kp G &kp P &kp H &kp E &kp A &kp I &kp ENTER
-				&kp LSHIFT &kp X &kp Q &kp M &kp W &kp Z &kp K &kp F &kp SEMI &kp SQT &kp DOT &kp RSHIFT
-				&kp LCTRL &kp LGUI &kp LALT &mo 2 &mo 3 &kp SPACE &mo 3 &mo 2 &kp RALT &mo 4 &kp RCTRL
-			>;
-		};
 		qwerty {
 			bindings = <
 				&kp ESC &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BSPC
 				&kp TAB &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L  &kp SEMI &kp ENTER
 				&kp LSHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp QMARK &kp RSHIFT
-				&kp LCTRL &kp LGUI &kp LALT &mo 3 &mo 2 &kp SPACE &mo 2 &mo 3 &kp RALT &mo 4 &kp RCTRL
+				&kp LCTRL &kp LGUI &kp LALT &mo 3 &mo 2 &kp SPACE &mo 2 &mo 3 &kp RALT &to 4 &kp RCTRL
 			>;
 		};
 		symbols {
 			bindings = <
-				&kp ESC &kp GRAVE &kp AT &kp HASH &kp DOLLAR &kp PRCNT &kp CARET &kp LBRC &kp RBRC &kp STAR &kp QMARK &kp BSPC
+				&to 0 &kp GRAVE &kp AT &kp HASH &kp DOLLAR &kp PRCNT &kp CARET &kp LBRC &kp RBRC &kp STAR &kp QMARK &kp BSPC
 				&kp TAB &kp SLASH &kp EXCL &kp MINUS &kp EQUAL &kp LT &kp GT &kp LPAR &kp RPAR &kp DOT  &kp BSLH &kp ENTER
 				&kp LSHIFT &kp TILDE &kp PLUS &kp UNDER &kp SEMI &kp PIPE &kp AMPS &kp LBKT &kp RBKT &kp COMMA &kp SQT &kp RSHIFT
 				&kp LCTRL &kp LGUI &kp LALT &to 0 &to 0 &kp SPACE &to 0 &to 0 &kp RALT &to 0 &kp RCTRL
@@ -69,7 +46,7 @@
 		};
 		functions {
 			bindings = <
-				&kp ESC &none &kp RIGHT &none &none &none &kp DOWN &kp K_VOL_UP &none &none &none &kp DEL
+				&to 0 &none &kp RIGHT &none &none &none &kp DOWN &kp K_VOL_UP &none &none &none &kp DEL
 				&kp TAB &none &none &none &none &none &none &kp LEFT &kp K_VOL_DN &none &none &kp ENTER
 				&kp LSHIFT &none &none &none &none &none &kp UP &kp K_MUTE &none &none &none &kp CAPS
 				&kp LCTRL &kp LGUI &kp LALT &none &to 0 &kp SPACE &to 0 &none &none &none &none &kp RCTRL
@@ -77,15 +54,15 @@
 		};
 		numbers {
 			bindings = <
-				&kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
+				&to 0 &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BSPC
 				&kp TAB &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp ENTER
 				&kp LSHIFT &kp F11 &kp F12 &none &none &none &none &none &none &none &none &kp RSHIFT
-				&kp LCTRL &none &none &none &none &none &none &none &none &none &none &kp RCTRL
+				&kp LCTRL &to 0 &to 0 &to 0 &to 0 &to 0 &to 0 &to 0 &to 0 &to 0 &to 0 &kp RCTRL
 			>;
 		};
 		settings {
 			bindings = <
-				&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &bt BT_PRV &bt BT_CLR
+				&to 0 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &bt BT_PRV &bt BT_CLR
 				&bt BT_CLR_ALL &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &none &none &none &none &none &studio_unlock
 				&none &none &none &none &none &none &bt BT_NXT &none &none &none &none &none
 				&none &none &none &none &none &none &none &none &none &none &bootloader
