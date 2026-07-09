@@ -3,6 +3,4 @@ if SHIELD_VOID40
 config ZMK_KEYBOARD_NAME
 	default "Void40"
 
-config CONFIG_CLOCK_CONTROL=y
-
 endif
