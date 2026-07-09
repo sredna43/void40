@@ -64,7 +64,7 @@
 		settings {
 			bindings = <
 				&to 0 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &bt BT_PRV &bt BT_CLR
-				&out OUT_TOG &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &none &none &none &none &none &studio_unlock
+				&none &bt BT_DISC 0 &bt BT_DISC 1 &bt BT_DISC 2 &bt BT_DISC 3 &bt BT_DISC 4 &none &none &none &none &none &studio_unlock
 				&none &none &bootloader &none &none &none &bt BT_NXT &none &none &none &none &none
 				&none &none &none &none &none &none &none &none &none &none &none
 			>;
